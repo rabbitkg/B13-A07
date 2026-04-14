@@ -21,7 +21,7 @@ const CardDetails = async ({ params }) => {
 
     return (
         <div>
-            
+
             {card ? (
                 <div className="max-w-6xl container mx-auto mt-5">
 
@@ -103,19 +103,19 @@ const CardDetails = async ({ params }) => {
                                 <div className="flex gap-4">
                                     <button className="btn flex h-16 flex-col py-10 px-20">
                                         <div>
-                                            <LuPhoneCall className="w-6 h-6"/>
+                                            <LuPhoneCall className="w-6 h-6" />
                                         </div>
                                         <p>Call</p>
                                     </button>
                                     <button className="btn flex h-16 flex-col py-10 px-20">
                                         <div>
-                                            <MdOutlineTextsms className="w-6 h-6"/>
+                                            <MdOutlineTextsms className="w-6 h-6" />
                                         </div>
                                         <p>text</p>
                                     </button>
                                     <button className="btn flex h-16 flex-col py-10 px-20">
                                         <div>
-                                            <LuVideo className="w-6 h-6"/>
+                                            <LuVideo className="w-6 h-6" />
 
                                         </div>
                                         <p>Video</p>
@@ -127,7 +127,9 @@ const CardDetails = async ({ params }) => {
 
                 </div>
             ) : (
-                <p>Card not found</p>
+                <div>
+                    <h2 className=" text-red-400 text-center items-center font-bold text-4xl py-48">Error occurred while fetching friend data. Please try again later.</h2>
+                </div>
             )}
         </div>
     );
