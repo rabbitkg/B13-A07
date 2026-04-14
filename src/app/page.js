@@ -1,6 +1,6 @@
-import AllCard from "@/components/home/AllCard";
-import Image from "next/image";
-import { GiH2O } from "react-icons/gi";
+
+import FriendCard from "./friend/page";
+
 
 export default function Home() {
   return (
@@ -49,7 +49,7 @@ export default function Home() {
             Your Friends
           </h2>
         </div>
-        <AllCard/>
+        <FriendCard/>
       </div>
     </div>
 
