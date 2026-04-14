@@ -1,3 +1,4 @@
+import AllCard from "@/components/home/AllCard";
 import Image from "next/image";
 import { GiH2O } from "react-icons/gi";
 
@@ -14,7 +15,7 @@ export default function Home() {
           Your personal shelf of meaningful connections. Browse, tend, and nurture the <br /> relationships that matter most.
         </p>
 
-        <button className="bg-[#244D3F] text-white px-6 py-3 rounded-sm mb-10">
+        <button className="bg-[#244D3F] text-white px-6 py-3 rounded-sm mb-10 cursor-pointer font-bold">
           + Add a Friend
         </button>
 
@@ -48,7 +49,7 @@ export default function Home() {
             Your Friends
           </h2>
         </div>
-
+        <AllCard/>
       </div>
     </div>
 
