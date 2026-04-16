@@ -21,20 +21,14 @@
 
 // export default CardContext;
 
-import { useState, createContext, useEffect } from "react";
+'use client';
+import { useState, createContext } from "react";
 
 export const cardButtonsContext = createContext();
 
 const CardContext = ({ children }) => {
-  const [timelineData, setTimelineData] = useState(() => {
-    const stored = localStorage.getItem("timeline");
-    return stored ? JSON.parse(stored) : [];
-  });
-
-  useEffect(() => {
-    localStorage.setItem("timeline", JSON.stringify(timelineData));
-  }, [timelineData]);
-
+  const [timelineData, setTimelineData] = useState([]);
+ 
   return (
     <cardButtonsContext.Provider value={{ timelineData, setTimelineData }}>
       {children}

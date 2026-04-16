@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "../components/Navbar.jsx";
 import FooterSection from "../components/Footer.jsx";
 import Providers from "./lib/providers";
+import { Toaster } from "react-hot-toast";
 // import { Toaster } from "react-hot-toast";
 
 
@@ -35,6 +36,7 @@ export default function RootLayout({ children }) {
         <Providers>
         <Navbar/>
           {children}
+          <Toaster position="top-center"/>
         </Providers>
         {/* <Toaster position="top-center" richColors /> */}
         <FooterSection/>

@@ -1,6 +1,7 @@
 'use client';
 import { cardButtonsContext } from '../../context/cardContext';
 import React, { useContext } from 'react';
+import toast from 'react-hot-toast';
 import { LuPhoneCall, LuVideo } from 'react-icons/lu';
 import { MdOutlineTextsms } from 'react-icons/md';
 
@@ -18,6 +19,8 @@ const DetailsButtons = ({card}) => {
     };
 
     setTimelineData([...timelineData, newActivity]);
+
+    toast.success(`${type} with ${card.name}`);
 };
 //  const handleCardDetailsButton = () => {
 //         console.log("Button clicked for card:");
