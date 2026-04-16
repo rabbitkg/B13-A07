@@ -23,6 +23,8 @@ const TimelinePage = () => {
       ) : (
         <div className="space-y-4">
           {timelineData.map((item) => {
+            if (!item.type) return null;
+
             const Icon = iconMap[item.type];
 
             return (
@@ -30,7 +32,7 @@ const TimelinePage = () => {
                 key={item.id}
                 className="flex items-center gap-4 bg-white shadow-md rounded-lg p-4"
               >
-                <Icon className="w-6 h-6 text-[#244D3F]" />
+                {Icon && <Icon className="w-6 h-6 text-[#244D3F]" />}
 
                 <div>
                   <p className="font-semibold">

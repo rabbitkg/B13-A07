@@ -9,20 +9,20 @@ const DetailsButtons = ({card}) => {
     const {timelineData, setTimelineData} = useContext(cardButtonsContext);
     console.log(timelineData, "timeline data from context"); 
 
-//  const handleCardDetailsButton = () => {
-//         const newActivity = {
-//         id: Date.now(),
-//         type, // call | text | video
-//         name: card.name,
-//         timestamp: new Date().toISOString(),
-//     };
+ const handleCardDetailsButton = (type) => {
+    const newActivity = {
+        id: Date.now(),
+        type,
+        name: card.name,
+        timestamp: new Date().toISOString(),
+    };
 
-//     setTimelineData([...timelineData, newActivity, card]);
+    setTimelineData([...timelineData, newActivity]);
+};
+//  const handleCardDetailsButton = () => {
+//         console.log("Button clicked for card:");
+//         setTimelineData([...timelineData, card]); //{ type: "call", timestamp: new Date() }]);
 //     }
- const handleCardDetailsButton = () => {
-        console.log("Button clicked for card:");
-        setTimelineData([...timelineData, card]); //{ type: "call", timestamp: new Date() }]);
-    }
 
 
     return (
