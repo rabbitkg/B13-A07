@@ -1,6 +1,6 @@
 <div align="center">
 
-  <img src="https://i.ibb.co.com/Y4b5Q8CR/Screenshot-2026-04-17-032430.jpg" alt="KeenKeeper Home" width="300"/>
+  <img src="https://i.ibb.co.com/Y4b5Q8CR/Screenshot-2026-04-17-032430.jpg" alt="KeenKeeper Home" width="600"/>
 
   <h1>KeenKeeper</h1>
 
@@ -59,10 +59,18 @@ Quick actions (Call, Text, Video) with instant updates
 
 ## 📸 Screenshots
 
-![KeenKeeper Timeline]
-<img src="https://i.ibb.co.com/gLx3kj7c/Screenshot-2026-04-17-032621.jpg" alt="KeenKeeper Timeline" width="200"/>
-![Products Stats]
-<img src="https://i.ibb.co.com/HfY61mbk/Screenshot-2026-04-17-032917.jpg" alt="KeenKeeper Stats" width="200"/>
+
+<div align="center">
+
+  <img src="https://i.ibb.co.com/gLx3kj7c/Screenshot-2026-04-17-032621.jpg" alt="KeenKeeper Timeline" width="45%" />
+  <img src="https://i.ibb.co.com/HfY61mbk/Screenshot-2026-04-17-032917.jpg" alt="KeenKeeper Stats" width="45%" />
+
+  <br/>
+
+  <b>KeenKeeper Timeline</b>
+  <b>KeenKeeper Stats</b>
+
+</div>
 
 ---
 
@@ -77,13 +85,13 @@ Quick actions (Call, Text, Video) with instant updates
 ---
 
 ## 🔧 Additional Features
-🔝 Navbar with active link highlighting
-🎯 Banner with summary cards
-👫 Friend cards with status-based UI
-⚡ Toast notifications on interactions
-📄 Custom 404 page
-⏳ Loading state for data fetching
-🦶 Footer section
+- 🔝 Navbar with active link highlighting
+- 🎯 Banner with summary cards
+- 👫 Friend cards with status-based UI
+- ⚡ Toast notifications on interactions
+- 📄 Custom 404 page
+- ⏳ Loading state for data fetching
+- 🦶 Footer section
 
 ---
 
