@@ -1,4 +1,6 @@
 import Image from "next/image";
+
+// import Link from "next/link";
 import { FiArchive } from "react-icons/fi";
 import { LuPhoneCall, LuVideo } from "react-icons/lu";
 import { MdOutlineNotificationsPaused, MdOutlineTextsms } from "react-icons/md";
@@ -18,6 +20,8 @@ const CardDetails = async ({ params }) => {
     const card = data.find(
         (item) => Number(item.id) === Number(cardDetails)
     );
+
+ 
 
     return (
         <div>
@@ -122,6 +126,9 @@ const CardDetails = async ({ params }) => {
                                     </button>
                                 </div>
                             </div>
+
+                            
+                            
                         </div>
                     </div>
 

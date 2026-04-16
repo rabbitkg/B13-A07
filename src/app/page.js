@@ -1,4 +1,5 @@
 
+import { Suspense } from "react";
 import FriendCard from "./friend/page";
 
 
@@ -49,9 +50,21 @@ export default function Home() {
             Your Friends
           </h2>
         </div>
-        <FriendCard/>
+        <Suspense fallback={<Loader />}>
+          <FriendCard />
+        </Suspense>
       </div>
     </div>
 
+  );
+}
+
+function Loader() {
+  return (
+    <div className="flex justify-center items-center py-10">
+      <span className="loading loading-spinner loading-lg text-accent"></span>
+      <span className="loading loading-spinner loading-lg text-neutral"></span>
+      <span className="loading loading-spinner loading-lg text-info"></span>
+    </div>
   );
 }
