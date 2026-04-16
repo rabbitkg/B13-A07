@@ -68,6 +68,7 @@ Quick actions (Call, Text, Video) with instant updates
   <br/>
 
   <b>KeenKeeper Timeline</b>
+  <b>and</b>
   <b>KeenKeeper Stats</b>
 
 </div>

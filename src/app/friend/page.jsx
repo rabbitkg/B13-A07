@@ -3,7 +3,9 @@ import { use } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-const cardPromise = fetch("http://localhost:3000/friends.json")
+const cardPromise = fetch("http://localhost:3000/friends.json", {
+    cache: "no-store",
+})
     .then((res) => res.json());
 
 const FriendCard =  () => {
@@ -11,7 +13,7 @@ const FriendCard =  () => {
 
     
     return (
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
             {cards.map((card, index) => (
                 <Link key={index} href={`/friend/${card.id}`}>
                     <div className="card bg-base-100 shadow-sm cursor-pointer hover:shadow-xl transition duration-300">

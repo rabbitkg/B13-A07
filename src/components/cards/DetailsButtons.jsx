@@ -22,15 +22,12 @@ const DetailsButtons = ({card}) => {
 
     toast.success(`${type} with ${card.name}`);
 };
-//  const handleCardDetailsButton = () => {
-//         console.log("Button clicked for card:");
-//         setTimelineData([...timelineData, card]); //{ type: "call", timestamp: new Date() }]);
-//     }
+
 
 
     return (
-        <div className="flex gap-4">
-            {/* <button className="btn flex h-16 flex-col py-10 px-20" onClick={handleCardDetailsButton}> */}
+        <div className="flex flex-col sm:flex-row gap-4">
+           
             <button className="btn flex h-16 flex-col py-10 px-20" onClick={() => handleCardDetailsButton("call")}>
                 <div>
                     <LuPhoneCall className="w-6 h-6" />

@@ -7,7 +7,6 @@ import { PieChart, Pie, Tooltip, Legend } from "recharts";
 const StatsPage = () => {
     const { timelineData } = useContext(cardButtonsContext);
 
-    // ✅ Count data
     const counts = {
         call: 0,
         text: 0,
@@ -20,7 +19,6 @@ const StatsPage = () => {
         }
     });
 
-    // ✅ Convert to chart data
     const data = [
         { name: "Call", value: counts.call, fill: "#244D3F" },
         { name: "Text", value: counts.text, fill: "#7C3AED" },
@@ -31,14 +29,12 @@ const StatsPage = () => {
         <div className="bg-gray-100 px-6 py-10">
             <div className="max-w-6xl mx-auto">
 
-                {/* Title */}
-                <h2 className="text-5xl font-bold text-[#1F2937] mb-6">
+                <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#1F2937] tracking-tight mb-6 md:mb-8">
                     Friendship Analytics
                 </h2>
 
-                {/* Chart Card */}
                 <div className="bg-white rounded-xl shadow-sm p-6">
-                    <p className="text-xl text-gray-600 mb-4">
+                    <p className="text-xl text-[#244D3F] mb-4 font-semibold">
                         By Interaction Type
                     </p>
 

@@ -22,11 +22,10 @@ const TimelinePage = () => {
 
   return (
     <div className="bg-gray-100 px-6 py-10">
-      {/* Header */}
+
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl font-bold mb-4">Timeline</h2>
 
-        {/* Filter */}
         <select
           className="border rounded-md px-4 py-2 mb-6 bg-white shadow-sm"
           onChange={(e) => setFilter(e.target.value)}
@@ -37,7 +36,6 @@ const TimelinePage = () => {
           <option value="video">Video</option>
         </select>
 
-        {/* Timeline List */}
         {filteredData.length === 0 ? (
           <p className="text-gray-500 text-center">No Activity/Data Found.</p>
         ) : (
@@ -52,14 +50,13 @@ const TimelinePage = () => {
                   key={item.id}
                   className="flex items-center gap-4 bg-white rounded-xl px-5 py-4 shadow-sm hover:shadow-md transition"
                 >
-                  {/* Icon */}
+
                   <div className="bg-gray-100 p-3 rounded-full">
                     {Icon && (
                       <Icon className="w-5 h-5 text-[#244D3F]" />
                     )}
                   </div>
 
-                  {/* Text */}
                   <div>
                     <p className="font-semibold text-gray-800">
                       {item.type.charAt(0).toUpperCase() +

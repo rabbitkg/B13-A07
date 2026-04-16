@@ -1,4 +1,4 @@
-// src/app/not-found.jsx
+
 import Link from 'next/link';
 
 export default function NotFound() {

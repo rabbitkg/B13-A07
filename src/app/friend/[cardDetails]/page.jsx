@@ -15,7 +15,9 @@ import { RiDeleteBin6Line } from "react-icons/ri";
 const CardDetails = async ({ params }) => {
     const { cardDetails } = await params;
 
-    const res = await fetch("http://localhost:3000/friends.json");
+    const res = await fetch("http://localhost:3000/friends.json", {
+        cache: "no-store",
+    });
     const data = await res.json();
 
     const card = data.find(
@@ -31,8 +33,8 @@ const CardDetails = async ({ params }) => {
             {card ? (
                 <div className="max-w-6xl container mx-auto mt-5">
 
-                    <div className="grid grid-cols-5 gap-5 p-10">
-                        <div className="col-span-2">
+                    <div className="grid grid-cols-1 lg:grid-cols-5 gap-5 p-4 md:p-10">
+                        <div className="lg:col-span-2">
                             <div className="shadow-md bg-white rounded-xl py-10 px-4 flex flex-col items-center text-center gap-2">
                                 <div >
                                     <div >
@@ -40,8 +42,8 @@ const CardDetails = async ({ params }) => {
                                             <Image
                                                 src={card.picture}
                                                 alt={card.name}
-                                                width={80}
-                                                height={800}
+                                                width={100}
+                                                height={100}
                                                 className="rounded-full mt-6"
                                             />
                                         )}
@@ -104,10 +106,9 @@ const CardDetails = async ({ params }) => {
                                 <p className="font-bold"><span className="text-[#64748B] font-medium">Connect every</span> {card.goal} days</p>
                             </div>
 
-                            <div className="shadow-md p-5 rounded-lg bg-white py-10">
+                            <div className="shadow-md p-5 rounded-lg bg-white py-12">
                                 <h1 className="text-[#244D3F] mb-3 font-bold text-xl">Quick Check-In</h1>
                                 <div >
-                                    {/* buttons was here */}
                                     <DetailsButtons card={card}/>
                                 </div>
                             </div>

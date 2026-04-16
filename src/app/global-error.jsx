@@ -1,4 +1,4 @@
-// src/app/global-error.jsx
+
 'use client';
 
 export default function GlobalError({
