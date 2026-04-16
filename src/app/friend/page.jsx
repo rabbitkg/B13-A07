@@ -3,7 +3,7 @@ import { use } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-const cardPromise = fetch("http://localhost:3000/friends.json", {
+const cardPromise = fetch("https://keen-keeper-teal.vercel.app/friends.json", {
     cache: "no-store",
 })
     .then((res) => res.json());

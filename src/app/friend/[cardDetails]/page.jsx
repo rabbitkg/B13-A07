@@ -15,7 +15,7 @@ import { RiDeleteBin6Line } from "react-icons/ri";
 const CardDetails = async ({ params }) => {
     const { cardDetails } = await params;
 
-    const res = await fetch("http://localhost:3000/friends.json", {
+    const res = await fetch("https://keen-keeper-teal.vercel.app/friends.json", {
         cache: "no-store",
     });
     const data = await res.json();
