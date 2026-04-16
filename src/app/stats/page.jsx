@@ -54,7 +54,14 @@ const StatsPage = () => {
                                 />
 
                                 <Tooltip />
-                                <Legend />
+                                <Legend verticalAlign="bottom"
+                                    align="center"
+                                    wrapperStyle={{
+                                        paddingTop: "10px",
+                                        display: "flex",
+                                        justifyContent: "center",
+                                        width: "100%",
+                                    }} />
                             </PieChart>
                         </div>
                     )}
