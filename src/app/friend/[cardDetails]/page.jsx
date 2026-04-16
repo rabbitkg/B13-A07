@@ -22,7 +22,7 @@ const CardDetails = async ({ params }) => {
     return (
         <div className="w-full">
             {card ? (
-                <div className="max-w-6xl mx-auto mt-5 px-4 w-full">
+                <div className="max-w-6xl mx-auto mt-20 px-4 w-full">
                     <div className="grid grid-cols-1 lg:grid-cols-5 gap-5 w-full">
 
                         <div className="lg:col-span-2 w-full">
