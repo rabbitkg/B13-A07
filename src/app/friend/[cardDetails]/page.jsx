@@ -1,9 +1,10 @@
+import DetailsButtons from "../../../components/cards/DetailsButtons";
 import Image from "next/image";
 
-// import Link from "next/link";
+
 import { FiArchive } from "react-icons/fi";
-import { LuPhoneCall, LuVideo } from "react-icons/lu";
-import { MdOutlineNotificationsPaused, MdOutlineTextsms } from "react-icons/md";
+
+import { MdOutlineNotificationsPaused } from "react-icons/md";
 import { RiDeleteBin6Line } from "react-icons/ri";
 
 
@@ -22,6 +23,7 @@ const CardDetails = async ({ params }) => {
     );
 
  
+   
 
     return (
         <div>
@@ -104,26 +106,9 @@ const CardDetails = async ({ params }) => {
 
                             <div className="shadow-md p-5 rounded-lg bg-white py-10">
                                 <h1 className="text-[#244D3F] mb-3 font-bold text-xl">Quick Check-In</h1>
-                                <div className="flex gap-4">
-                                    <button className="btn flex h-16 flex-col py-10 px-20">
-                                        <div>
-                                            <LuPhoneCall className="w-6 h-6" />
-                                        </div>
-                                        <p>Call</p>
-                                    </button>
-                                    <button className="btn flex h-16 flex-col py-10 px-20">
-                                        <div>
-                                            <MdOutlineTextsms className="w-6 h-6" />
-                                        </div>
-                                        <p>text</p>
-                                    </button>
-                                    <button className="btn flex h-16 flex-col py-10 px-20">
-                                        <div>
-                                            <LuVideo className="w-6 h-6" />
-
-                                        </div>
-                                        <p>Video</p>
-                                    </button>
+                                <div >
+                                    {/* buttons was here */}
+                                    <DetailsButtons card={card}/>
                                 </div>
                             </div>
 
