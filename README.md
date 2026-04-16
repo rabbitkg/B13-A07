@@ -1,36 +1,94 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<div align="center">
 
-## Getting Started
+  <img src="https://i.ibb.co.com/Y4b5Q8CR/Screenshot-2026-04-17-032430.jpg" alt="KeenKeeper Home" width="300"/>
 
-First, run the development server:
+  <h1>KeenKeeper</h1>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+  <p>
+    <strong>Stay Connected. Build Stronger Friendships.</strong><br>
+    Track your interactions, manage your friends, and visualize your communication with a modern timeline and analytics dashboard.
+  </p>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+</div>
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📘 KeenKeeper
 
-## Learn More
+A modern friendship management web app that helps you keep track of your connections, stay in touch, and visualize your interactions with friends.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## ✨ Description
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+**KeenKeeper** is a responsive web application where users can manage their friends, monitor communication frequency, and log interactions like calls, texts, and video chats. It provides a clean UI with analytics and timeline tracking to help maintain meaningful relationships.
 
-## Deploy on Vercel
+### 🚀 Live Demo
+[View Live Website](https://keen-keeper-teal.vercel.app/)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🛠️ Technologies Used
+
+- **Frontend**: Next.js (App Router) – For building the application
+- **Styling**: Tailwind CSS + DaisyUI – Styling and responsive design
+- **Chart**: Recharts – Data visualization (Pie Chart for stats)
+- **Notifications**: React Hot Toast – Toast notifications
+- **Icons**: React Icons – Icons
+- **Deployment Ready**: Optimized for Vercel
+
+
+## 🚀 Key Features
+
+### 1. 📜 **Timeline Tracking**
+Logs every interaction (Call, Text, Video)
+Displays history with date, icon, and title
+Includes filtering by interaction type
+
+### 2. 📊 **Friendship Analytics**
+Pie chart visualization of interaction types
+Real-time data based on user actions
+Clean and modern UI
+
+### 3. 👤 **Friend Management System**
+View detailed friend profiles
+Track contact goals and due dates
+Quick actions (Call, Text, Video) with instant updates
+
+---
+
+## 📸 Screenshots
+
+![KeenKeeper Timeline]
+<img src="https://i.ibb.co.com/gLx3kj7c/Screenshot-2026-04-17-032621.jpg" alt="KeenKeeper Timeline" width="200"/>
+![Products Stats]
+<img src="https://i.ibb.co.com/HfY61mbk/Screenshot-2026-04-17-032917.jpg" alt="KeenKeeper Stats" width="200"/>
+
+---
+
+## 📱 Responsiveness
+
+- Fully responsive design
+- Works smoothly on:
+- 📱 Mobile
+- 📲 Tablet
+- 💻 Desktop
+
+---
+
+## 🔧 Additional Features
+🔝 Navbar with active link highlighting
+🎯 Banner with summary cards
+👫 Friend cards with status-based UI
+⚡ Toast notifications on interactions
+📄 Custom 404 page
+⏳ Loading state for data fetching
+🦶 Footer section
+
+---
+
+## 👨‍💻 Author  
+**Md. Fazle Rabbi**  
+📧 rabbitkgbd@gmail.com
+
+</div>

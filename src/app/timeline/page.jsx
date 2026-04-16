@@ -21,7 +21,7 @@ const TimelinePage = () => {
       : timelineData.filter((item) => item.type === filter);
 
   return (
-    <div className="bg-gray-100 min-h-screen px-6 py-10">
+    <div className="bg-gray-100 px-6 py-10">
       {/* Header */}
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl font-bold mb-4">Timeline</h2>
